@@ -15,9 +15,6 @@ import {
   ContainerBackground,
 } from "./styles"
 
-import portal from '../../../../../public/portal2.png'
-import logo from '../../../../../public/logo.png'
-
 const Main = () => {
 
   const { authenticated, handleLogout } = useContext(AuthContext)
@@ -39,13 +36,13 @@ const Main = () => {
       <PortalContainer>
         <PortalBackground />
         
-        <PortalImg src={portal} opacity={.2} seconds={10.5} />
-        <PortalImg src={portal} opacity={.8} />
-        <PortalImg src={portal} opacity={.6} rotate={300} />
-        <PortalImg src={portal} opacity={.4} rotate={170} />
-        <PortalImg src={portal} opacity={.2} rotate={100} />
+        <PortalImg opacity={.2} seconds={10.5} />
+        <PortalImg opacity={.8} />
+        <PortalImg opacity={.6} rotate={300} />
+        <PortalImg opacity={.4} rotate={170} />
+        <PortalImg opacity={.2} rotate={100} />
       
-        <LogoImg src={logo} />
+        <LogoImg />
       </PortalContainer>
 
     </Container>

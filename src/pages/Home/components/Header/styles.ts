@@ -1,6 +1,8 @@
 import styled, { css, keyframes } from "styled-components"
 
-import bg from '../../../../../public/bg2.jpg'
+import portalImg from '/public/portal.png'
+import logoImg from '/public/logo.png'
+import backgroundImg from '/public/background.jpg'
 
 const PortalAnimation = (n = 0) => keyframes`
   100% { transform: rotate(${360 + n}deg); }
@@ -53,7 +55,7 @@ export const ContainerBackground = styled.div`
   height: 600px;
   width: 100%;
   background-color: #152238;
-  background-image: url(${bg});
+  background-image: url(${backgroundImg});
   background-size: cover;
   filter: blur(2px) grayscale(40%);
 `
@@ -84,7 +86,9 @@ interface PortalImgProps {
   seconds?: number
 }
 
-export const PortalImg = styled.img<PortalImgProps>`
+export const PortalImg = styled.img.attrs({
+  src: portalImg
+})<PortalImgProps>`
   position: absolute;
   max-width: 500px;
   width: 90%;
@@ -110,7 +114,9 @@ export const PortalBackground = styled.div`
   border-radius: 50%;
 `
 
-export const LogoImg = styled.img`
+export const LogoImg = styled.img.attrs({
+  src: logoImg
+})`
   position: absolute;
   max-width: 700px;
   width: 90%;

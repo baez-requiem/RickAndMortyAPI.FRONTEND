@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components"
 
-import bg from '../../../public/bg2.jpg'
+import backgroundImg from '/public/background.jpg'
 
 const pulseAnim = keyframes`
   0%   { box-shadow: 0 0 0 #fff7; }
@@ -29,7 +29,7 @@ left: 0px;
 height: 100%;
 width: 100%;
 
-background-image: url(${bg});
+background-image: url(${backgroundImg});
 background-size: cover;
 filter: blur(2px) grayscale(40%);
 `

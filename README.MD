@@ -17,7 +17,16 @@
 * * create an .env file
 * * set VITE_SERVER_URL="`http://localhost:4000/graphql`"
 * * set VITE_API_URL="`https://rickandmortyapi.com/graphql`"
-* * 
+_
 * Backend
 * * create an .env file
 * * set DATABASE_URL="`<your_database_url>`"
+
+## 🚀 Running
+
+* Backend
+* * `yarn dev`
+* * Navigate to http://localhost:4000/ to see GraphQL Playground.
+_
+* Frontend
+* * `yarn dev` to see the app url.

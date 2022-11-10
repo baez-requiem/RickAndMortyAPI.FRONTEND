@@ -1,8 +1,8 @@
 import styled, { css, keyframes } from "styled-components"
 
-import portalImg from '/public/portal.png'
-import logoImg from '/public/logo.png'
-import backgroundImg from '/public/background.jpg'
+const portalImg = '/portal.png'
+const logoImg = '/logo.png'
+const backgroundImg = '/background.jpg'
 
 const PortalAnimation = (n = 0) => keyframes`
   100% { transform: rotate(${360 + n}deg); }

@@ -62,7 +62,7 @@ const Content = () => {
 
           {hasLoadMore && (
             <ButtonContainer>
-              <Button onClick={() => loadMore()}>Load more characters</Button>
+              <Button onClick={loadMore}>Load more</Button>
             </ButtonContainer>
           )}
 

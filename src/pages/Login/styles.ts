@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components"
 
-import backgroundImg from '/public/background.jpg'
+const backgroundImg = '/background.jpg'
 
 const pulseAnim = keyframes`
   0%   { box-shadow: 0 0 0 #fff7; }
